@@ -1,0 +1,42 @@
+body,
+h1,
+h2 {
+	font-family: 'Raleway', sans-serif;
+}
+.vertical {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-10%);
+}
+
+.callout:hover {
+	background-color: #EBEBEB;
+ }
+
+h1 {
+	font-size: 52px;
+	font-weight: 300;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+section {
+  min-height: 90vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #F80000;
+  background-color: #000000;
+  bottom: 10px;
+}
+
+footer {
+  background-color: #1E90FF;
+  color: #FFD700;
+  line-height: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  text-align: center;
+  font-family: cursive, sans-serif;
+}

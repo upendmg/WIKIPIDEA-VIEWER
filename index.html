@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>A Pen by  Upendra Nath Maurya</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <html ng-app="WikipediaApplication">
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+</head>
+	<section>
+	<body ng-controller="WikipediaController">
+		<div id="wikipedia" class="small-10 small-offset-1 medium-8 medium-offset-2 large-6 large-offset-3 columns vertical">
+             <div class="container-fluid">
+			<h1  class="text-center margin">Wikipedia Viewer</h1>
+
+			<div class="row">
+				<div class="small-8 small-offset-2 medium-6 medium-offset-3 large-4 large-offset-4 columns">
+					<form>
+						<input type="text" placeholder="Search Wikipedia" ng-model="searchTerm" ng-change="searchWikipedia()">
+					</form>
+				</div>
+			</div>
+			<p class="text-center"><a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank"> Search here for a random article</a></p>
+
+			<a href="https://en.wikipedia.org/?curid={{ result.pageid }}" target="_blank" ng-repeat="result in results">
+				<div class="callout large">
+					<h2>{{ result.title }}</h2>
+					<p>{{ result.extract }}</p>
+				</div>
+			</a>
+		</section>
+		<footer>
+    <p>Copyright © Upendra Nath Maurya 2016.All Rights Reserved</p>
+</footer>
+		</div>
+	</body>
+</html>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
